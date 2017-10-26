@@ -16,10 +16,10 @@ public class Main {
 
         System.out.println("Please choose your browser");
         explorer = keyboard.nextLine();
-        browser.setName(keyboard.nextLine());
+
         if (!explorer.equalsIgnoreCase("Internet Explorer"))
         {
-
+            browser.setName(explorer);
             do {
 
                 Tabs tabs = new Tabs();
